@@ -1,0 +1,85 @@
+// 清除浮動
+@mixin clearfix() {
+    &:after,
+    &:before {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// 引入圖片及寬高自動為圖片實際尺寸
+@mixin bg($img) {
+    width: image-width(#{$img});
+    height: image-height(#{$img});
+    background-image: image-url(#{$img});
+}
+
+// 轉場效果
+@mixin trans($key) {
+    transition: $key ease-in-out;
+}
+
+// font-awesome
+@mixin fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// placeholder
+@mixin placeholder( $color: #595656, $color-h: #aaa) {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &::-moz-placeholder {
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        color: $color;
+    }
+    &.placeholder {
+        &::-webkit-input-placeholder {
+            color: $color-h;
+        }
+        &::-moz-placeholder {
+            color: $color-h;
+        }
+        &:-ms-input-placeholder {
+            color: $color-h;
+        }
+        &:-moz-placeholder {
+            color: $color-h;
+        }
+    }
+}
+
+// 版型內容區域的最大預設寬度
+@mixin layout-max-width() {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+// 版型內容區域寬度960
+@mixin layout-width() {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+//文字尺寸, 文字行高, 文字顏色, 文字滑入顏色
+@mixin font-color($primary: $text-color, $secondary: false) {
+    @if $secondary {
+        &:hover {
+            color: $secondary;
+        }
+    }
+    color:$primary;
+}

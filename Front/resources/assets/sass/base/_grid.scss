@@ -1,0 +1,26 @@
+// media queries
+$maxDesktop: 1920px;
+$custom: 1620px;
+$notebook: 1320px;
+$desktop: 1000px;
+
+@mixin MQ($canvas) {
+    @if $canvas == maxDesktop {
+        @media only screen and (max-width: $maxDesktop) { @content; }
+    }
+    @else if $canvas == custom {
+        @media only screen and (max-width: $custom) { @content; }
+    }
+    @else if $canvas == notebook {
+        @media only screen and (max-width: $notebook) { @content; }
+    }
+    @else if $canvas == desktop {
+        @media only screen and (max-width: $desktop) { @content; }
+    }
+}
+
+//模板
+@include MQ(maxDesktop) {}
+@include MQ(custom) {}
+@include MQ(notebook) {}
+@include MQ(desktop) {}

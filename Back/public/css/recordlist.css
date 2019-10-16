@@ -1,0 +1,90 @@
+/* line 2, ../sass/recordlist.scss */
+.recordlist body {
+  background-color: #fff;
+}
+/* line 4, ../sass/recordlist.scss */
+.recordlist body .main_container {
+  padding: 20px 20px 108px 20px;
+}
+/* line 6, ../sass/recordlist.scss */
+.recordlist body .main_container h1 {
+  font-size: 28px;
+}
+/* line 9, ../sass/recordlist.scss */
+.recordlist body .main_container .panel {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+/* line 16, ../sass/recordlist.scss */
+.recordlist body .main_container .panel .table_header {
+  text-align: center;
+}
+/* line 18, ../sass/recordlist.scss */
+.recordlist body .main_container .panel .table_header div {
+  border-right: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  padding: 10px;
+}
+/* line 22, ../sass/recordlist.scss */
+.recordlist body .main_container .panel .table_header div:last-child {
+  border-right: none;
+}
+/* line 29, ../sass/recordlist.scss */
+.recordlist body .main_container .panel .table_container .trl_record div {
+  padding: 10px 15px 10px 15px;
+}
+/* line 31, ../sass/recordlist.scss */
+.recordlist body .main_container .panel .table_container .trl_record div.trl_action, .recordlist body .main_container .panel .table_container .trl_record div.trl_user, .recordlist body .main_container .panel .table_container .trl_record div.trl_date {
+  text-align: center;
+}
+/* line 35, ../sass/recordlist.scss */
+.recordlist body .main_container .panel .table_container .trl_record:nth-child(2n+1) {
+  background-color: #eee;
+}
+/* line 39, ../sass/recordlist.scss */
+.recordlist body .main_container .panel .table_container .error_log {
+  padding: 20px 10px;
+}
+/* line 47, ../sass/recordlist.scss */
+.recordlist .l_r_padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 51, ../sass/recordlist.scss */
+.recordlist .t_b_padding {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* line 55, ../sass/recordlist.scss */
+.recordlist .all_padding {
+  padding: 15px;
+}
+/* line 58, ../sass/recordlist.scss */
+.recordlist .l_r_padding_dis {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 62, ../sass/recordlist.scss */
+.recordlist .t_b_padding_dis {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 66, ../sass/recordlist.scss */
+.recordlist .all_padding_dis {
+  padding: 0;
+}
+/* line 71, ../sass/recordlist.scss */
+.recordlist .pagination > .active > a, .recordlist .pagination > .active > a:focus, .recordlist .pagination > .active > a:hover, .recordlist .pagination > .active > span, .recordlist .pagination > .active > span:focus, .recordlist .pagination > .active > span:hover {
+  background-color: #1D8398;
+  border-color: #1D8398;
+  color: #eee;
+}
+/* line 76, ../sass/recordlist.scss */
+.recordlist .pagination > li > a, .recordlist .pagination > li > span {
+  color: #1D8398;
+}
+/* line 79, ../sass/recordlist.scss */
+.recordlist .pagination {
+  margin: 0;
+}

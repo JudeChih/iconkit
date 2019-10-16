@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/* --- 基本設定 --- */
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+@import "base/grid";
+
+/* --- 頁面 --- */
+
+@import "page/main";
